@@ -1,0 +1,6 @@
+[submodule "vizir-client"]
+	path = vizir-client
+	url = git@github.com:EduSantosBrito/vizir-client.git
+[submodule "vizir-api"]
+	path = vizir-api
+	url = git@github.com:EduSantosBrito/vizir-api.git
