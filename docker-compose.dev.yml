@@ -11,3 +11,13 @@ services:
       PORT: 3000
     volumes:
       - ./vizir-api/src:/usr/src/app/src
+  client:
+    build:
+      context: ./vizir-client
+      dockerfile: dev.Dockerfile
+    environment:
+      NODE_ENV: development
+    ports:
+      - "3000:3000"
+    volumes:
+      - "./vizir-client/src:/usr/src/app/src"

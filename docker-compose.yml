@@ -9,3 +9,11 @@ services:
     environment:
       NODE_ENV: production
       PORT: 3000
+  client:
+    build:
+      context: ./vizir-client
+      dockerfile: Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - "3000:80"
