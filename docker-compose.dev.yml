@@ -20,4 +20,4 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - "./vizir-client/src:/usr/src/app/src"
+      - "./vizir-client:/usr/src/app"
