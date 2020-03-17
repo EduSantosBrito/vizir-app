@@ -49,9 +49,3 @@ docker-compose -f docker-compose.dev.yml up --build
 O projeto React irá rodar na porta 3000, o projeto Express irá rodar na porta 3001.
 
 **OBS: No modo de desenvolvimento, a api e o client estão em hot-reload. Caso queira modificar algo, eles atualizarão sozinhos sem necessidade de reiniciar o container**
-
-**OBS2: Caso durante o build do docker, apareça esse erro ao instalar pacotes do yarn:**
-```bash
-info There appears to be trouble with your network connection. Retrying... 
-```
-**Você deverá remover o yarn.lock da pasta vizir-api e vizir-client, após isso rode o build novamente.**
